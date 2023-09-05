@@ -1,0 +1,144 @@
+body {
+  background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 5px; /* Reduced spacing between logo and menu */
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-list li {
+    margin-right: 5px; /* Reduced spacing between menu items */
+}
+
+.menu-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px; /* Adjust padding for most menu items */
+    border-radius: 10px; /* Add border radius to the menu items */
+    transition: background-color 0.3s, padding 0.3s; /* Add transition for hover effect */
+}
+
+.menu-list a:hover {
+    background-color: #FE6D73; /* Change the background color on hover */
+    padding: 10px 15px; /* Adjust padding on hover */
+}
+
+/* Adjust spacing for "Hire" menu item */
+.menu-list li:last-child {
+    margin-right: 10px; /* Increased spacing for "Hire" */
+}
+
+.menu-list a:last-child {
+    padding: 5px 15px; /* Increased padding for "Hire" */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .menu-list li {
+        margin-right: 3px; /* Further reduce the margin for smaller screens */
+    }
+    
+    .menu-list a {
+        padding: 3px 6px; /* Further reduce the padding for smaller screens */
+    }
+    
+    /* Adjust spacing for "Hire" menu item in smaller screens */
+    .menu-list li:last-child {
+        margin-right: 5px; /* Increased spacing for "Hire" */
+    }
+    
+    .menu-list a:last-child {
+        padding: 3px 12px; /* Increased padding for "Hire" */
+    }
+}
+@keyframes rainbow {
+      0% {color: red;}
+      14% {color: orange;}
+      28% {color: yellow;}
+      42% {color: green;}
+      57% {color: blue;}
+      71% {color: indigo;}
+      85% {color: violet;}
+      100% {color: red;}
+    }
+
+    h1 {
+      font-size: 48px;
+      animation: rainbow 5s linear infinite;
+    }
+    
+p1 {
+  font-size: 20px;
+  color: #fff;
+}
+
+span {
+  color: #17C3B2
+}
+
+h2 {
+  color: #fff;
+  font-size: 48px;
+  padding: 30px 0 8px;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  bottom: 16px;
+  width: 150px;
+  height: 14px;
+  transform: skew(-12deg) translateX(-50%);
+  background: #A4031F;
+  z-index: -1;
+}
+
+span1 {
+  color: #F2A359;
+  font-size: 30px;
+}
+
+span2 {
+  color: #FFDB00;
+  left: 7%;
+  bottom: 16px;
+  transform: skew(-12deg) translateY(-50%);
+  background: #A4031F;
+  z-index: -1;
+}
+
+p {
+  font-size: 34px;
+  color: white;
+}
+
+p2 {
+  font-family: sora, sans-serif;
+  color: white;
+}
