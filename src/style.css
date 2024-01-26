@@ -127,6 +127,7 @@ nav {
   }
 
 .welcome{
+    height: auto;
     opacity: 0.5;
 }
 
