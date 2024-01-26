@@ -1,4 +1,5 @@
 body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #fff;
     color: #000;
     overflow-x: hidden;
@@ -76,11 +77,11 @@ nav {
 
 @media screen and (max-width: 768px) {
     .menu-list li {
-        margin-right: 3px; /* Further reduce the margin for smaller screens */
+        margin-right: 3px; 
     }
     
     .menu-list a {
-        padding: 3px 6px; /* Further reduce the padding for smaller screens */
+        padding: 3px 6px; 
     }
     
     /* Adjust spacing for "Hire" menu item in smaller screens */
@@ -124,16 +125,16 @@ nav {
     margin-left: 5px; /* Smaller gap */
     transition: all 0.2s ease-in-out;
   }
-  
+
 .welcome{
-    opacity: 0.6;
-  }
+    opacity: 0.5;
+}
 
 .main-b1 {
     font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 40%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white; 
@@ -142,3 +143,42 @@ nav {
     font-size: 170%;
   }
   
+h1{
+    left: 40%;
+}
+
+.dev-b1{
+        background: linear-gradient(45deg, #4CAF50, #FF0000, #2196F3, #FFFF00);
+        background-size: 600% 600%;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: span-b1 15s infinite;
+    }
+
+      
+      @keyframes span-b1 {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+.main-b2{
+    font-size: 70px;
+    text-align: left;
+    margin-top: 1%;
+    padding-left: 20%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 50vh;
+    color: rgb(45, 130, 241);
+}
+
+h5{
+    margin-top: 20%;
+}
