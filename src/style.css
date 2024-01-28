@@ -1,4 +1,5 @@
 body{
+    background-image: url(../assets/design\ format.jpg);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #fff;
     color: #000;
@@ -128,7 +129,11 @@ nav {
 
 .welcome{
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.1;
+}
+
+.main-body{
+    box-sizing: border-box;
 }
 
 .main-b1 {
@@ -140,8 +145,8 @@ nav {
     text-align: center;
     color: white; 
     z-index: 1; 
-    color: #222222;
-    font-size: 170%;
+    color: #fffb00;
+    font-size: 120%;
   }
   
 h1{
@@ -171,15 +176,9 @@ h1{
     }
 
 .main-b2{
-    font-size: 70px;
+    z-index: 1;
     text-align: left;
-    margin-top: 1%;
-    padding-left: 18%;
+    padding-left: 20%;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    min-height: 50vh;
-    color: rgb(45, 130, 241);
-}
-
-h5{
-    margin-top: 20%;
+    min-height: 50vh;   
 }
