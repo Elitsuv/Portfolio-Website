@@ -182,3 +182,15 @@ h1{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     min-height: 50vh;   
 }
+
+@media screen and (max-width: 768px) {
+    .main-b1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main-b2 {
+        padding-left: 5%;
+        text-align: center;
+    }
+}
