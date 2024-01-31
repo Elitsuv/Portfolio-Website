@@ -51,5 +51,80 @@
             </div>
         </section>
       </div>
+
+<div id="CVm">
+    <style>
+        
+        #mobileAlert {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            padding: 5px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            border-radius: 15px;
+        }
+
+        #alertContent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #alertContent a.alertButton {
+            padding: 5px 10px;
+            border: 1px solid #007bff;
+            border-radius: 30px;
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #alertContent button.closeButton {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+    <div id="mobileAlert">
+        <div id="alertContent">
+            <a class="alertButton" href="#">Open in desktop view</a>
+            <a class="alertButton" href="#">Download CV</a>
+            <button class="closeButton" onclick="closeAlert()">❌</button>
+        </div>
+    </div>
+
+    <script>
+        
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        // Function to show the alert after 2 seconds if the user is on a mobile device
+        function PortCV() {
+            if (isMobileDevice()) {
+                document.getElementById('mobileAlert').style.display = 'block';
+            }
+        }
+
+        // Close the alert
+        function closeAlert() {
+            document.getElementById('mobileAlert').style.display = 'none';
+        }
+
+        // Call the function after 2 seconds
+        setTimeout(PortCV, 2000);
+    </script>
+</div>
+
 </body>
 </html>
