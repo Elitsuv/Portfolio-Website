@@ -1,159 +1,96 @@
-body{
-    background-image: url(../assets/design\ format.jpg);
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+body {
     background-color: #fff;
     color: #000;
     overflow-x: hidden;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; 
-    background-color: #000000;
-    color: white;
-    padding: 10px 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-nav {
+  }
+  
+  .head-1 {
     display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 50px; 
-    height: auto;
-    margin-right: 5px; 
-}
-
-
-
-.menu-list {
+    font-family: 'Sora', sans-serif;
+    color: #FF6B6B;
+    align-items: center; /* Center elements vertically */
+  }
+  
+  .nav-head {
+    font-size: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.menu-list li {
-    margin-right: 5px; 
-}
-
-.menu-list a {
-    line-height: 1.5;
-    color: white;
+    gap: 30px;
+    margin-top: 4.2%;
+    margin-left: 35%;
+    
+  }
+  
+  a {
     text-decoration: none;
-    font-weight: bold;
-    padding: 5px 8px; 
-    border-radius: 10px; 
-    transition: background-color 0.3s, padding 0.3s; 
-}
-
-.menu-list a:hover {
-    background-color: rgb(0, 13, 255); 
-    padding: 10px 15px;
-}
-
-
-.menu-list li:last-child {
-    margin-right: 10px; 
-}
-
-.menu-list a:last-child {
-    padding: 5px 15px; 
-}
-
-
-@media screen and (max-width: 768px) {
-    .menu-list li {
-        margin-right: 3px; 
-    }
-    
-    .menu-list a {
-        padding: 3px 6px; 
-    }
-    
-    /* Adjust spacing for "Hire" menu item in smaller screens */
-    .menu-list li:last-child {
-        margin-right: 5px; /* Increased spacing for "Hire" */
-    }
-    
-    .menu-list a:last-child {
-        padding: 3px 12px; /* Increased padding for "Hire" */
-    }
-}
-
-.mark{
-    background-color: rgb(255, 217, 0);
-}
-
-#search-box {
-    border: none;
-    border-radius: 25px;
-    padding: 5px 10px;
-    font-size: 16px;
-    background-color: #f2f2f2;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-right: 1%;
-    width: 150px; 
-    transition: all 0.2s ease-in-out; /* Smooth resizing */
-    min-width: 200px; /* Prevent collapsing when empty */
-    max-width: 300px; /* Limit maximum width */
-    margin-left: auto; /* Remove extra margin */
-    flex: none; /* Prevent shrinking in flexbox layout */
+    color: #FF6B6B;
   }
   
-  #search {
-    border: none;
-    border-radius: 50%;
-    background-color: #f2f2f2;
-    color: #000;
-    cursor: pointer;
-    padding: 5px; /* Smaller size */
-    margin-right: -120%;
-    margin-left: 5px; /* Smaller gap */
-    transition: all 0.2s ease-in-out;
-  }
-
-.welcome{
-    height: 100%;
-    opacity: 0.1;
-}
-
-.main-body{
-    box-sizing: border-box;
-}
-
-.main-b1 {
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white; 
-    z-index: 1; 
-    color: #fffb00;
-    font-size: 120%;
+  h1 {
+    margin-top: 4.2%;
+    font-size: 45px;
+    margin-left: 15%;
   }
   
-h1{
-    left: 40%;
-}
-
-.main-b2{
-    z-index: 1;
-    text-align: left;
-    padding-left: 20%;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    min-height: 50vh;   
-}
+  .hamburger-menu {
+    display: none; /* Hide hamburger menu on larger screens */
+    background-color: transparent;
+    border: none;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 10px;
+  }
+  
+  .hamburger-menu:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #FF6B6B;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .hamburger-menu.active .bar:first-child {
+    /* Rotate first bar on menu click */
+    transform: translateX(10px) rotate(-45deg);
+  }
+  
+  .hamburger-menu.active .bar:last-child {
+    /* Rotate third bar on menu click */
+    transform: translateX(-10px) rotate(45deg);
+  }
+  
+  /* Media queries for responsive behavior */
+  
+  @media screen and (max-width: 768px) {
+    .head-1 {
+      justify-content: space-between; /* Space elements horizontally */
+    }
+  
+    .nav-head {
+      display: none; /* Initially hide navigation links */
+      position: absolute; /* Position off-screen initially */
+      top: 100%; /* Position below the header */
+      left: 0; /* Align to left edge */
+      width: 100%; /* Full width of the screen */
+      background-color: #fff; /* Set background color */
+      padding: 20px; /* Add padding for better look */
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+      transform: translateX(-100%); /* Move off-screen to left by 100% */
+    }
+  
+    .hamburger-menu.active .nav-head {
+      transform: translateX(0); /* Show navigation on menu click */
+    }
+  
+    .hamburger-menu {
+      display: block; /* Show hamburger menu on smaller screens */
+    }
+  }
+  
+  
