@@ -1,4 +1,5 @@
 body {
+    font-family: 'Sora', sans-serif;
     background-color: #fff;
     color: #000;
     overflow-x: hidden;
@@ -26,6 +27,14 @@ body {
   a {
     text-decoration: none;
     color: #FF6B6B;
+  }
+
+  a:hover{
+    border-radius: 12px;
+    padding: 4px;
+    text-shadow: 0 0 5px #ff4e4e, 0 0 15px #ff4e4e, 0 0 20px #ff4e4e, 0 0 40px #ff4e4e, 0 0 60px #ff0000, 0 0 10px #ff4e4e, 0 0 98px #ff0000;
+    color: #fff;
+    background-color: #FF6B6B;
   }
   
   h1 {
@@ -75,7 +84,7 @@ body {
     h1{
       margin-top: 4.2%;
       font-size: 45px;
-      margin-left: 10px;
+      margin-left: 11px;
     }
     .nav-head {
       display: none; /* Initially hide navigation links */
@@ -96,6 +105,25 @@ body {
     .hamburger-menu {
       display: block; /* Show hamburger menu on smaller screens */
     }
+
+    h2 {
+      margin-left: 11px;
+      font-size: 45px;
+    }
   }
   
-  
+.body-2{
+  color: #000;
+  font-size: 40px;
+  margin-left: 15%;
+}
+
+.span-x1 {
+  background-color: #41ff5e;
+}
+
+.body-p2 {
+  font-size: 30px;
+  left: 10%;
+  color: #747474;
+}
