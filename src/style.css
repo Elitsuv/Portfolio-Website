@@ -107,7 +107,7 @@ body {
     }
 
     h2 {
-      margin-left: 11px;
+      left: 9px;
       font-size: 45px;
     }
   }
@@ -127,3 +127,27 @@ body {
   left: 10%;
   color: #747474;
 }
+
+.span-x2::before {
+  color: #4b41ff;
+  content: "Developer ⚒";
+  animation: animate infinite 7s;
+}
+
+@keyframes animate { 
+  
+  0% { 
+      content: "Developer ⚒";
+      color: #4b41ff;
+  } 
+
+  50% { 
+      content: "Designer 🎨"; 
+      color: #ffde06;
+  } 
+
+  75% { 
+      content: "Editor 📺"; 
+      color: #ff418a;
+  } 
+} 
