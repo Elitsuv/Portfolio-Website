@@ -29,14 +29,24 @@ body {
     color: #FF6B6B;
   }
 
-  a:hover{
+  .n1:hover{
     border-radius: 12px;
     padding: 4px;
-    text-shadow: 0 0 5px #ff4e4e, 0 0 15px #ff4e4e, 0 0 20px #ff4e4e, 0 0 40px #ff4e4e, 0 0 60px #ff0000, 0 0 10px #ff4e4e, 0 0 98px #ff0000;
-    color: #fff;
-    background-color: #FF6B6B;
+    background-color: #41ff5e;
   }
   
+  .nav-head2:hover{
+    border-radius: 12px;
+    padding: 4px;
+    background-color: #41ff5e;
+  }
+
+  .nav-head3:hover{
+    border-radius: 12px;
+    padding: 4px;
+    background-color: #41ff5e;
+  }
+
   h1 {
     margin-top: 4.2%;
     font-size: 45px;
@@ -110,6 +120,17 @@ body {
       left: 9px;
       font-size: 45px;
     }
+
+    .case-1 {
+      border: solid #000;
+      border-radius: 12px;
+      width: 95%;
+    }
+
+    .github {
+      width: 30%;
+      height: 30%;
+    }
   }
   
 .body-2{
@@ -151,3 +172,15 @@ body {
       color: #ff418a;
   } 
 } 
+
+.case-1 {
+  border: solid #000;
+  border-radius: 12px;
+  width: 60%;
+}
+
+.hr {
+  height: 3px;
+  width: 30%;
+  background-color: #000;
+}
