@@ -1,4 +1,4 @@
-window.alert("This website is under Pre development");
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const hamburgerMenu = document.querySelector('.hamburger-menu');
